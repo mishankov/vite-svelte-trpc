@@ -17,7 +17,7 @@ npm run dev:server # in separate terminal
 
 For HMR support use link from `dev:client` command
 
-### Create and rin production build
+### Create and run production build
 
 ```bash
 npm run build
