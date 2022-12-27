@@ -5,10 +5,7 @@ import superjson from "superjson";
 import { userList, counter, increaseCounter } from "./test_data.js";
 
 // created for each request
-export const createContext = ({
-  req,
-  res,
-}: trpcExpress.CreateExpressContextOptions) => ({}); // no context
+export const createContext = (_options: trpcExpress.CreateExpressContextOptions) => ({}); // no context
 
 type Context = inferAsyncReturnType<typeof createContext>;
 
