@@ -26,8 +26,14 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    
     - run: npm ci
     - run: npm run build --if-present
-    - run: |
+
+    - name: Lint
+      run: npm run check
+    
+    - name: Run tests
+      run: |
         npx playwright install
         npm test
