@@ -4,6 +4,14 @@
 
 This template should help get you started developing with Vite, Svelte and tRPC combo
 
+## Features
+
+- HMR for client code with Vite and automatic build and restart for server with tcx on file changes
+- Playwright setup for E2E tests
+- GitHub Actions workflow with build, lint and test steps
+- Dependabot setup to keep dependencies updated
+- Express server to serve SPA and handle tRPC API calls
+
 ## How to work with this template?
 
 ### Fork and clone this repo
