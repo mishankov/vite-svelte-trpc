@@ -1,3 +1,5 @@
+[![CI](https://github.com/mishankov/vite-svelte-trpc/actions/workflows/ci.yml/badge.svg)](https://github.com/mishankov/vite-svelte-trpc/actions/workflows/ci.yml)
+
 # Vite + Svelte + tRPC
 
 This template should help get you started developing with Vite, Svelte and tRPC combo
