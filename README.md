@@ -14,7 +14,7 @@ This template should help get you started developing with Vite, Svelte and tRPC 
 
 ## How to work with this template?
 
-### Fork and clone this repo
+### Create repo from this template with "Use this template" button above and clone it
 
 Run `npm i` to install dependencies
 
