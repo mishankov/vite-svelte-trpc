@@ -18,7 +18,10 @@ app.use(
   })
 );
 
-app.use("/", express.static(path.join(__dirname, "client")));
+app.use(express.static(path.join(__dirname, "public")));
+app.get("*", function (request, response) {
+  response.sendFile(path.join(__dirname, "public", "index.html"));
+});
 
 const { PORT = 5000 } = process.env;
 
