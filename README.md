@@ -26,7 +26,7 @@ npm run dev
 
 For HMR support use http://localhost:5173/ link by default. tRPC endpoint is http://localhost:5000/
 
-You can also start client and server separatly. Use `npm run dev:server` to start server and `npm run dev:client` to start client
+You can also start client and server separately. Use `npm run dev:server` to start server and `npm run dev:client` to start client
 
 ### Create and run production build
 
