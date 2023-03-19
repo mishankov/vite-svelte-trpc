@@ -21,11 +21,12 @@ Run `npm i` to install dependencies
 ### Start server and client
 
 ```bash
-npm run dev:client
-npm run dev:server # in separate terminal
+npm run dev
 ```
 
-For HMR support use link from `dev:client` command
+For HMR support use http://localhost:5173/ link by default. tRPC endpoint is http://localhost:5000/
+
+You can also start client and server separately. Use `npm run dev:server` to start server and `npm run dev:client` to start client
 
 ### Create and run production build
 
@@ -48,7 +49,3 @@ npm run start
 ## Recommended IDE Setup
 
 [VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
-
-
-
-
