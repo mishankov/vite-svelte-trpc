@@ -1,16 +1,18 @@
 [![CI](https://github.com/mishankov/vite-svelte-trpc/actions/workflows/ci.yml/badge.svg)](https://github.com/mishankov/vite-svelte-trpc/actions/workflows/ci.yml)
+[![MadeWithSvelte.com shield](https://madewithsvelte.com/storage/repo-shields/4184-shield.svg)](https://madewithsvelte.com/p/vite-svelte-trpc-template/shield-link)
 
 # Vite + Svelte + tRPC
 
-This template should help get you started developing with Vite, Svelte and tRPC combo
+This template should help get you started developing with [Vite](https://vitejs.dev/), [Svelte](https://svelte.dev/) and [tRPC](https://trpc.io/) combo
 
 ## Features
 
 - HMR for client code with Vite and automatic build and restart for server with tcx on file changes
-- Playwright setup for E2E tests
-- GitHub Actions workflow with build, lint and test steps
-- Dependabot setup to keep dependencies updated
-- Express server to serve SPA and handle tRPC API calls
+- [Vitest](https://vitest.dev/) for unit tests
+- [Playwright](https://playwright.dev/) for E2E tests
+- [GitHub Actions](https://github.com/features/actions) workflow with build, lint and test steps
+- [Dependabot](https://docs.github.com/en/code-security/dependabot/working-with-dependabot) setup to keep dependencies updated
+- [Express](https://expressjs.com/) server to serve SPA and handle tRPC API calls
 
 ## How to work with this template?
 
@@ -28,6 +30,20 @@ For HMR support use http://localhost:5173/ link by default. tRPC endpoint is htt
 
 You can also start client and server separately. Use `npm run dev:server` to start server and `npm run dev:client` to start client
 
+### Testing
+
+Unit test are living in `tests` directory. To execute them, run: 
+
+```bash
+npm run test
+```
+
+E2E UI tests are livind in `e2e` directory. To execute them, run: 
+
+```bash
+npm run e2e
+```
+
 ### Create and run production build
 
 ```bash
@@ -38,6 +54,8 @@ npm run start
 ## Important points of file structure
 
 - `dist` - client and server build directory
+- `e2e` - E2E tests
+- `tests` - unit tests
 - `src`
   - `lib`
     - `trpc.ts` - tRPC client setup to use in browser code
