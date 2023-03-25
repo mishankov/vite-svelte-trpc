@@ -5,13 +5,12 @@ name: CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -20,20 +19,24 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    
-    - run: npm ci
-    - run: npm run build --if-present
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
 
-    - name: Lint
-      run: npm run check
-    
-    - name: Run tests
-      run: |
-        npx playwright install
-        npm test
+      - run: npm ci
+      - run: npm run build --if-present
+
+      - name: Lint
+        run: npm run check
+
+      - name: Run unit tests
+        run: |
+          npm run test
+
+      - name: Run E2E tests
+        run: |
+          npx playwright install
+          npm run e2e

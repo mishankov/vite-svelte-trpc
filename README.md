@@ -7,7 +7,8 @@ This template should help get you started developing with Vite, Svelte and tRPC 
 ## Features
 
 - HMR for client code with Vite and automatic build and restart for server with tcx on file changes
-- Playwright setup for E2E tests
+- Vitest for unit tests
+- Playwright for E2E tests
 - GitHub Actions workflow with build, lint and test steps
 - Dependabot setup to keep dependencies updated
 - Express server to serve SPA and handle tRPC API calls
@@ -27,6 +28,20 @@ npm run dev
 For HMR support use http://localhost:5173/ link by default. tRPC endpoint is http://localhost:5000/
 
 You can also start client and server separately. Use `npm run dev:server` to start server and `npm run dev:client` to start client
+
+### Testing
+
+Unit test are living in `tests` directory. To execute them, run: 
+
+```bash
+npm run test
+```
+
+E2E UI tests are livind in e2e directory. To execute them, run: 
+
+```bash
+npm run e2e
+```
 
 ### Create and run production build
 
