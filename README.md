@@ -3,16 +3,16 @@
 
 # Vite + Svelte + tRPC
 
-This template should help get you started developing with Vite, Svelte and tRPC combo
+This template should help get you started developing with [Vite](https://vitejs.dev/), [Svelte](https://svelte.dev/) and [tRPC](https://trpc.io/) combo
 
 ## Features
 
 - HMR for client code with Vite and automatic build and restart for server with tcx on file changes
-- Vitest for unit tests
-- Playwright for E2E tests
-- GitHub Actions workflow with build, lint and test steps
-- Dependabot setup to keep dependencies updated
-- Express server to serve SPA and handle tRPC API calls
+- [Vitest](https://vitest.dev/) for unit tests
+- [Playwright](https://playwright.dev/) for E2E tests
+- [GitHub Actions](https://github.com/features/actions) workflow with build, lint and test steps
+- [Dependabot](https://docs.github.com/en/code-security/dependabot/working-with-dependabot) setup to keep dependencies updated
+- [Express](https://expressjs.com/) server to serve SPA and handle tRPC API calls
 
 ## How to work with this template?
 
@@ -54,6 +54,8 @@ npm run start
 ## Important points of file structure
 
 - `dist` - client and server build directory
+- `e2e` - E2E tests
+- `tests` - unit tests
 - `src`
   - `lib`
     - `trpc.ts` - tRPC client setup to use in browser code
