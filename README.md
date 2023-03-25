@@ -1,4 +1,5 @@
 [![CI](https://github.com/mishankov/vite-svelte-trpc/actions/workflows/ci.yml/badge.svg)](https://github.com/mishankov/vite-svelte-trpc/actions/workflows/ci.yml)
+[![MadeWithSvelte.com shield](https://madewithsvelte.com/storage/repo-shields/4184-shield.svg)](https://madewithsvelte.com/p/vite-svelte-trpc-template/shield-link)
 
 # Vite + Svelte + tRPC
 
@@ -37,7 +38,7 @@ Unit test are living in `tests` directory. To execute them, run:
 npm run test
 ```
 
-E2E UI tests are livind in e2e directory. To execute them, run: 
+E2E UI tests are livind in `e2e` directory. To execute them, run: 
 
 ```bash
 npm run e2e
