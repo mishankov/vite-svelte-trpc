@@ -16,9 +16,23 @@ This template should help get you started developing with [Vite](https://vitejs.
 
 ## How to work with this template?
 
-### Create repo from this template with "Use this template" button above and clone it
+### Installation
 
-Run `npm i` to install dependencies
+#### Using `degit`
+
+```bash
+npx degit github:mishankov/vite-svelte-trpc my-app
+```
+
+#### Using GitHub template
+
+Create repo from this template with "Use this template" button above and clone it
+
+### Install dependencies
+
+```bash
+npm i
+```
 
 ### Start server and client
 
