@@ -12,7 +12,7 @@ This template should help get you started developing with [Vite](https://vitejs.
 - [Playwright](https://playwright.dev/) for E2E tests
 - [GitHub Actions](https://github.com/features/actions) workflow with build, lint and test steps
 - [Dependabot](https://docs.github.com/en/code-security/dependabot/working-with-dependabot) setup to keep dependencies updated
-- [Express](https://expressjs.com/) server to serve SPA and handle tRPC API calls
+- [Express](https://expressjs.com/) and [sirv](https://github.com/lukeed/sirv) to serve SPA and handle tRPC API calls
 
 ## How to work with this template?
 
