@@ -4,11 +4,11 @@
 
   import { client } from './lib/trpc';
 
-  let name: string;
+  let name: string | undefined;
 
   async function testApi() {
     let data = await client.userById.query("1")
-    name = data.name
+    name = data?.name
   }
 
   testApi()
