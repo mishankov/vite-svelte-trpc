@@ -52,7 +52,7 @@ Unit test are living in `tests` directory. To execute them, run:
 npm run test
 ```
 
-E2E UI tests are livind in `e2e` directory. To execute them, run: 
+E2E UI tests are living in `e2e` directory. To execute them, run: 
 
 ```bash
 npm run e2e
