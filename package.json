@@ -21,7 +21,7 @@
         "@sveltejs/vite-plugin-svelte": "^2.4.6",
         "@tsconfig/svelte": "^5.0.2",
         "@types/compression": "^1.7.3",
-        "@types/express": "^4.17.18",
+        "@types/express": "^4.17.19",
         "@types/node": "^20.8.4",
         "concurrently": "^8.2.1",
         "svelte": "^4.2.1",
