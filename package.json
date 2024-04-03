@@ -33,7 +33,7 @@
         "vitest": "^1.4.0"
     },
     "dependencies": {
-        "@trpc/client": "^10.45.0",
+        "@trpc/client": "^10.45.2",
         "@trpc/server": "^10.7.0",
         "compression": "^1.7.4",
         "express": "^4.19.2",
