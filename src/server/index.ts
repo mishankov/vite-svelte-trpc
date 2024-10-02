@@ -25,7 +25,7 @@ app.use(
 );
 
 app.use(express.static(path.join(__dirname, "public")));
-app.use(compress, assets);
+app.use(compress(), assets);
 
 const { PORT = 5000 } = process.env;
 
