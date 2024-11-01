@@ -35,9 +35,9 @@
     "dependencies": {
         "@trpc/client": "^10.45.2",
         "@trpc/server": "^10.7.0",
-        "compression": "^1.7.4",
+        "compression": "^1.7.5",
         "express": "^4.21.1",
-        "sirv": "^2.0.4",
+        "sirv": "^3.0.0",
         "superjson": "^2.2.1"
     }
 }
